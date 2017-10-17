@@ -16,7 +16,7 @@
  	
  	echo "<hr />";
  	log::write('record_1');
- 	class mysql{
+/* 	class mysql{
  		public function query($sql){
  			log::write($sql);
  		}
@@ -30,4 +30,6 @@
  		$mysql->query($sql);
  	}
  	echo 'Task completed!'; 
+*/
+ 	print_r($_GET);
  ?>

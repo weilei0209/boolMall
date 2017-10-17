@@ -6,6 +6,7 @@
 		public static function write($cont){
 			$cont = $cont . "\r\n";
 			$log  = self::isBak();
+
 			$fh = fopen($log,'ab');
 			fwrite($fh, $cont);
 			fclose($fh);
@@ -24,6 +25,11 @@
 				touch($log);
 				return $log;
 			}
+
+			//clear the cache of file information
+
+			clearstatcache(true,$log);
+
 			$size = filesize($log);
 			if($size < 1024*1024){
 				return $log;

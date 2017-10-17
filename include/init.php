@@ -7,6 +7,11 @@
 	require(ROOT.'include/db.class.php');
 	require(ROOT.'include/conf.class.php');
 	require(ROOT.'include/log.class.php');
+	require(ROOT.'include/lib_base.php');
+
+	$_GET = _addslashes($_GET);
+	$_POST = _addslashes($_POST);
+	$_COOKIE = _addslashes($_COOKIE);
 
 	if(defined('DEBUG')){
 		error_reporting(E_ALL);
