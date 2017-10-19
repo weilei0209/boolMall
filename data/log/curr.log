@@ -1,0 +1,4 @@
+record_1
+use boolMall
+set names utf8
+insert into test(t1,t2) values('wei\'lei','y\"zh')

@@ -7,4 +7,6 @@
 		public abstract function getAll($sql);
 		public abstract function autoExecute($table,$data,$act='insert',$where='');
 	}
+
+
  ?>

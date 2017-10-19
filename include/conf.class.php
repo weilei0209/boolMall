@@ -1,4 +1,5 @@
 <?php 
+//	define ('ROOT',dirname(dirname(__FILE__)).'/');
 	class conf{
 		protected static $ins = null;
 		protected $data = array();
@@ -36,6 +37,7 @@
 
 /*	$conf = conf::getIns();
 
+	echo "<pre />";
 	print_r($conf);
 	echo "<hr />";
 	echo $conf->host,'<br />';

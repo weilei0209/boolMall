@@ -8,6 +8,7 @@
 	require(ROOT.'include/conf.class.php');
 	require(ROOT.'include/log.class.php');
 	require(ROOT.'include/lib_base.php');
+	require(ROOT.'include/mysql.class.php');
 
 	$_GET = _addslashes($_GET);
 	$_POST = _addslashes($_POST);
