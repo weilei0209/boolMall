@@ -59,7 +59,7 @@
 			log::write($sql);
 		}
 
-		public function autoExecute($arr,$table,$mode='insert',$where = 'where 1 limit 1'){
+		public function autoExecute($table,$arr,$mode='insert',$where = 'where 1 limit 1'){
 			if(!is_array($arr)){
 				return false;
 			}
@@ -74,10 +74,10 @@
 
 				return $this->query($sql);
 			}
-			$sql = 'insert ino' . $table . ' (' . implode(',',array_keys($arr)) . ')';
+			$sql = 'insert into ' . $table . ' (' . implode(',',array_keys($arr)) . ')';
 			$sql .=' values (\'';
 			$sql .= implode("','",array_values($arr));
-			$sql .= '\'';
+			$sql .= '\')';
 
 			return $this->query($sql);
 		}

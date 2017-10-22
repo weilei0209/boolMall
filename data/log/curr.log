@@ -2,3 +2,22 @@ record_1
 use boolMall
 set names utf8
 insert into test(t1,t2) values('wei\'lei','y\"zh')
+use boolMall
+set names utf8
+insert into test(t1,t2) values('weilei','zh')
+use boolMall
+set names utf8
+insert into test(t1,t2) values('weilei','zh')
+insert inotest (t1,t2) values ('weilei','zh'
+use boolMall
+set names utf8
+insert into test(t1,t2) values('weilei','zh')
+insert ino test (t1,t2) values ('weilei','zh'
+use boolMall
+set names utf8
+insert into test(t1,t2) values('weilei','zh')
+insert into test (t1,t2) values ('weilei','zh'
+use boolMall
+set names utf8
+insert into test(t1,t2) values('weilei','zh')
+insert into test (t1,t2) values ('weilei','zh')

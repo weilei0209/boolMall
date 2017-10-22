@@ -18,6 +18,7 @@
 	$sql = "insert into test(t1,t2) values('$t1','$t2')";
 
 	var_dump($mysql->query($sql));	
+	var_dump($mysql->autoExecute('test',$_GET,'insert'));
 /*	echo "<hr />";
 	echo $conf->host,'<br />';
 	echo $conf->user;
